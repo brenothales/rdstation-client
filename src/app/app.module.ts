@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CompaniesModule } from './companies/companies.module';
 import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RouterModule } from '@angular/router';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MaterializeModule.forRoot(),
     ColorPickerModule,
     ChartsModule,
-    CompaniesModule
+    CompaniesModule,
+    RouterModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
