@@ -12,6 +12,9 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { routing } from './app.routing';
+import { UsersModule } from './users/users.module';
+import { HttpModule } from '@angular/http';
+import { Angular2TokenService } from 'angular2-token';
 
 
 @NgModule({
@@ -28,9 +31,10 @@ import { routing } from './app.routing';
     ChartsModule,
     CompaniesModule,
     RouterModule,
+    UsersModule,
     routing
   ],
-  providers: [],
+  providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
