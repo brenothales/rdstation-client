@@ -1,3 +1,5 @@
-<p>
-  company-edit works!
-</p>
+<div class="container">
+    <app-company-form [company]="company"></app-company-form>
+    <app-product-list [company_id]="company.id" [products]="company.products" *ngIf="company.id != undefined"></app-product-list>
+</div>
+

@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-content">
+    <form #q="ngForm" (ngSubmit)="onSubmit(q)">
+      <div class="subscriber">
+        <div class="row">
+          <div class="col m9 s12">
+              <input type="text" placeholder="Name Subscriber" name="id" [(ngModel)]="subscriber.id" required #id="ngModel">
+              <label for="id" [hidden]="id.valid || id.pristine" class="red-text text-lighten-2">Required</label>
+            </div>
+          <div class="row">
+            <div class="col m9 s12">
+              <input type="number" placeholder="Price " name="price" [(ngModel)]="subscriber.price" #price="ngModel">
+              <label for="price" [hidden]="price.valid" class="red-text text-lighten-2">Required</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m3" *ngIf="subscriber.id !== undefined">
+            <a href="#" class="grey-text" (click)="deleteSubscriber(subscriber)">
+              <i mz-icon-mdi [icon]="'delete'" [size]="'24px'">
+              </i>
+            </a>
+          </div>
+          <div class="col m3 right">
+            <button [disabled]="!q.valid" class="btn" type="submit" *ngIf="subscriber.id == undefined">Create</button>
+            <button [disabled]="!q.valid" class="btn" type="submit" *ngIf="subscriber.id !== undefined">Update</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
