@@ -4,15 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
-  },
-  "engines": {
-    "node": "9.5.0",
-    "npm": "5.6.0"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +24,6 @@
     "angular2-token": "^0.2.0-beta.14",
     "chart.js": "^2.7.1",
     "core-js": "^2.4.1",
-    "express": "^4.16.2",
     "mdi": "^2.0.46",
     "ng2-charts": "^1.6.0",
     "ng2-materialize": "^1.6.0",
