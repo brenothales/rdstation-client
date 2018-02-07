@@ -12,7 +12,7 @@ import { Product } from '../../shared/product.model';
 })
 export class CompanyListComponent implements OnInit {
 
-  private companies: Company[] = [];
+  public companies: Company[] = [];
 
   constructor(private companyService: CompanyService, private toastService: MzToastService) { }
 
