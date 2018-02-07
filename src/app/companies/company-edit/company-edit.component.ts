@@ -8,11 +8,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-company-edit',
-  templateUrl: './Company-edit.component.html',
-  styleUrls: ['./Company-edit.component.css']
+  templateUrl: './company-edit.component.html',
+  styleUrls: ['./company-edit.component.css']
 })
 export class CompanyEditComponent implements OnInit {
-    public company: Company = new Company({primary_color: 'red', enable: false});
+    public company: Company = new Company({primary_color: '#eee', enable: false});
   constructor(
     private companyService: CompanyService,
     private route: ActivatedRoute,
