@@ -12,7 +12,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./Company-edit.component.css']
 })
 export class CompanyEditComponent implements OnInit {
-    public company: Company = new Company({primary_color: '#eee', enable: false});
+    public company: Company = new Company({primary_color: 'red', enable: false});
   constructor(
     private companyService: CompanyService,
     private route: ActivatedRoute,
