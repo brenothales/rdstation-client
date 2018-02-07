@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    // "start": "http-server dist/",
     "heroku-prebuild": "npm install -g http-server",
     "heroku-postbuild": "ng build --prod",
     "start": "node Server.js",
