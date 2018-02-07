@@ -5,7 +5,9 @@
 .title-box{
     margin-bottom: 0px;
 }
-
+.uppcase{
+    text-transform: uppercase;
+}
 .title{
     margin-top: 0px;
 }

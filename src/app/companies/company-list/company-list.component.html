@@ -10,7 +10,7 @@
               <div class="col m9 s12">
                 <div class="row title-box">
                   <div class="col m8 s12">
-                    <h6 class="title"> <span class="label">CNPJ</span> {{ company.cnpj }}</h6>
+                    <h6 class="title uppcase label">CNPJ: {{ company.cnpj }} | {{ company.country }} | {{ company.currency }}</h6>
                   </div>
                   <div class="col m4 s12">
                     <div class="row">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="row">
                   <div class="col m12">
-                    <p class="description grey-text">{{ company.price | slice:0:120 }}</p>
+                    <p class="description grey-text">{{ company.description | slice:0:120 }}</p>
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col m12 s6">
                   <div class="row">
-                    <a class="btn blue center-align" routerLink="/answers/{{ company.id }}">Answers</a>
+                    <a class="btn blue center-align" routerLink="/subscribers/{{ company.id }}">Payer</a>
                   </div>
                 </div>
               </div>

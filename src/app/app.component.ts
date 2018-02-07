@@ -9,7 +9,7 @@ import { Angular2TokenService } from 'angular2-token';
 export class AppComponent {
   constructor(private _tokenService: Angular2TokenService) {
     this._tokenService.init({
-      apiPath: 'http://localhost:3000/api/v1',
+      apiPath: 'https://rdstationapi.herokuapp.com/api/v1',
       signInRedirect: '/login',
       globalOptions: {
         headers: {
